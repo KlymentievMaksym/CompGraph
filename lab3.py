@@ -86,33 +86,65 @@ def create_fractal(axiom, rule, max_iter, fi, dfi, is_degree=False, show_all=Fal
         plot_fractal(axiom, fi, dfi, show_on_one, is_animation)
         
 plt.close(fig='all') 
-axiom = "F+F+F+F"
-rule = "FF+F++F+F"
-max_iter = 3
-fi = 0
-# dfi = np.pi/2
-dfi = [0, 2*np.pi, 1e-2]
-create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
+# axiom = "F+F+F+F"
+# rule = "FF+F++F+F"
+# max_iter = 3
+# fi = 0
+# # dfi = np.pi/2
+# dfi = [0, 2*np.pi, 1e-2]
+# create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
 
-axiom = "X"
-rule = {"X": "XFYFX+F+YFXFY-F-XFYFX", "Y": "YFXFY-F-XFYFX+F+YFXFY"}
-max_iter = 4
-fi = 0
-dfi = [0, 2*np.pi, 1e-2]
-create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
+# axiom = "X"
+# rule = {"X": "XFYFX+F+YFXFY-F-XFYFX", "Y": "YFXFY-F-XFYFX+F+YFXFY"}
+# max_iter = 4
+# fi = 0
+# dfi = [0, 2*np.pi, 1e-2]
+# create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
 
-axiom = "FF+FF+FF+FF"
-rule = "F+F-F-F+F"
-max_iter = 4
-fi = 0
-# dfi = np.pi/2
-dfi = [0, 2*np.pi, 1e-2]
-create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
+# axiom = "FF+FF+FF+FF"
+# rule = "F+F-F-F+F"
+# max_iter = 4
+# fi = 0
+# # dfi = np.pi/2
+# dfi = [0, 2*np.pi, 1e-2]
+# create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
 
-axiom = "X+X+X+X+X+X+X+X"
-rule = {"X": "X+YF++YF-FX--FXFX-YF+X", "Y": "-FX+YFYF++YF+FX--FX-YF"}
-max_iter = 4
-fi = 0
-# dfi = np.pi/4
-dfi = [0, 2*np.pi, 1e-2]
-create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
+# axiom = "X+X+X+X+X+X+X+X"
+# rule = {"X": "X+YF++YF-FX--FXFX-YF+X", "Y": "-FX+YFYF++YF+FX--FX-YF"}
+# max_iter = 4
+# fi = 0
+# # dfi = np.pi/4
+# dfi = [0, 2*np.pi, 1e-2]
+# create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
+
+# axiom = "XF"
+# rule = {"X": "X+YF++YF-FX--FXFX-YF+", "Y": "-FX+YFYF++YF+FX--FX-Y"}
+# max_iter = 4
+# fi = 0
+# # dfi = 60
+# dfi = [0, 2*np.pi, 1e-2]
+# create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
+
+# axiom = "FX"
+# rule = {"X": "X+YF+", "Y": "-FX-Y"}
+# max_iter = 16
+# fi = 0
+# # dfi = 90
+# dfi = [0, 2*np.pi, 1e-2]
+# create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
+
+# axiom = "F++F++F++F++F"
+# rule = "F++F++F+++++F-F++F"
+# max_iter = 4
+# fi = 0
+# # dfi = 36
+# dfi = [0, 2*np.pi, 1e-2]
+# create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
+
+# axiom = "F+F+F+F"
+# rule = "FF+F+F+F+FF"
+# max_iter = 4
+# fi = 0
+# # dfi = np.pi/2
+# dfi = [0, 2*np.pi, 1e-2]
+# create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
