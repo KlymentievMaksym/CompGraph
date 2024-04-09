@@ -1,11 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.animation as animation
-# from numba import njit
+from numba import njit
 import time
 
 
-# @njit(nogil=True)
+@njit(nogil=True)
 def calculate_xy(axiom, N, L, fi, dfi):
     x = np.zeros(N+1)
     y = np.zeros(N+1)
@@ -109,13 +109,13 @@ plt.close(fig='all')
 # dfi = [0, 2*np.pi, 1e-2]
 # create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
 
-# axiom = "X+X+X+X+X+X+X+X"
-# rule = {"X": "X+YF++YF-FX--FXFX-YF+X", "Y": "-FX+YFYF++YF+FX--FX-YF"}
-# max_iter = 4
-# fi = 0
-# # dfi = np.pi/4
-# dfi = [0, 2*np.pi, 1e-2]
-# create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
+axiom = "X+X+X+X+X+X+X+XX+X+X+X+X+X+X+XX+X+X+X+X+X+X+XX+X+X+X+X+X+X+XX+X+X+X+X+X+X+XX+X+X+X+X+X+X+XX+X+X+X+X+X+X+XX+X+X+X+X+X+X+X"
+rule = {"X": "X+YF++YF-FX--FXFX-YF+X", "Y": "-FX+YFYF++YF+FX--FX-YF"}
+max_iter = 4
+fi = 0
+# dfi = np.pi/4
+dfi = [0, 2*np.pi, 1e-2]
+create_fractal(axiom, rule, max_iter, fi, dfi, is_animation=True)
 
 # axiom = "XF"
 # rule = {"X": "X+YF++YF-FX--FXFX-YF+", "Y": "-FX+YFYF++YF+FX--FX-Y"}
